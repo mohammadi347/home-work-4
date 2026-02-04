@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #F5F5DC;
+  color: #3b2b1f;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  color: #8B4513;
+}
+
+.subtitle {
+  color: #DAA520;
+  animation: fadeIn 2s ease;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #8B4513;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.card {
+  background: white;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.image-placeholder {
+  height: 160px;
+  background: linear-gradient(135deg, #DAA520, #8B4513);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::after {
+content: ""; 
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.9);
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.city-day {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background: white;
+}
+
+.city-image {
+  flex: 1;
+  height: 260px;
+  background: linear-gradient(135deg, #8B4513, #5a2e0f);
+  position: relative;
+}
+
+.city-image::after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.9);
+  font-family: 'Noto Serif', serif;
+  font-size: 22px;
+}
+
+.city-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.city-info {
+  flex: 2;
+}
+
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #8B4513;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  background: #DAA520;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
